@@ -13,6 +13,9 @@ https://stackoverflow.com/questions/27732213/how-to-add-bold-and-normal-text-in-
 product_name = 'Название товара (первая строка)\n(вторая строка)'
 product_article = '1234567890-1234567890-12345'
 color = 'Черный'
+size = '50'
+consist = 'экокожа'
+provider = 'ИП Сидоров В.Н.'
 registerFont(TTFont('Arial', 'ARIAL.ttf'))
 registerFont(TTFont('ArialBd', 'ARIALBd.ttf'))
 registerFontFamily('Arial', normal='Arial', bold='ArialBd')
@@ -28,6 +31,9 @@ canvas.drawText(textobject)
 canvas.setFont("Arial", 8)
 canvas.drawString(1 * mm, 29 * mm, f'Артикул: {product_article}')
 canvas.drawString(1 * mm, 26 * mm, f'Цвет: {color}')
+canvas.drawString(1 * mm, 23 * mm, f'Размер: {size}')
+canvas.drawString(1 * mm, 20 * mm, f'Состав: {consist}')
+canvas.drawString(1 * mm, 17 * mm, f'Поставщик: {provider}')
 canvas.save()
 
 
