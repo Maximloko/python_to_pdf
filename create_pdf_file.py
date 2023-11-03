@@ -34,6 +34,8 @@ canvas.drawString(1 * mm, 26 * mm, f'Цвет: {color}')
 canvas.drawString(1 * mm, 23 * mm, f'Размер: {size}')
 canvas.drawString(1 * mm, 20 * mm, f'Состав: {consist}')
 canvas.drawString(1 * mm, 17 * mm, f'Поставщик: {provider}')
+canvas.drawImage('icon.png', 135, 48, width=30, height=30)
+canvas.drawImage('barcode.png', 5, 2, width=158, height=43)
 canvas.save()
 
 
